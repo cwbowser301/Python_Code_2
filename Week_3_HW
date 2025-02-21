@@ -1,0 +1,52 @@
+# 6-11 & 6-12. Enhanced Cities Dictionary
+cities = {
+    "New York": {
+        "country": "USA",
+        "population": "8.3 million",
+        "fact": "Known as the Big Apple.",
+        "founded": 1624,
+        "landmark": "Statue of Liberty"
+    },
+    "Tokyo": {
+        "country": "Japan",
+        "population": "14 million",
+        "fact": "Has the busiest train station in the world.",
+        "founded": 1603,
+        "landmark": "Tokyo Tower"
+    },
+    "Paris": {
+        "country": "France",
+        "population": "2.1 million",
+        "fact": "Home to the famous Louvre Museum.",
+        "founded": "3rd century BC",
+        "landmark": "Eiffel Tower"
+    }
+}
+
+# Allow user to add a new city
+new_city = input("Enter the name of a city to add: ")
+country = input(f"Enter the country for {new_city}: ")
+population = input(f"Enter the population of {new_city}: ")
+fact = input(f"Enter an interesting fact about {new_city}: ")
+founded = input(f"Enter the year {new_city} was founded: ")
+landmark = input(f"Enter a famous landmark in {new_city}: ")
+
+# Add new city to dictionary
+cities[new_city] = {
+    "country": country,
+    "population": population,
+    "fact": fact,
+    "founded": founded,
+    "landmark": landmark
+}
+
+# Display all cities sorted alphabetically
+print("\n--- City Information ---")
+for city in sorted(cities.keys()):
+    info = cities[city]
+    print(f"\n{city}:")
+    print(f"  Country: {info['country']}")
+    print(f"  Population: {info['population']}")
+    print(f"  Interesting Fact: {info['fact']}")
+    print(f"  Founded: {info['founded']}")
+    print(f"  Famous Landmark: {info['landmark']}")
