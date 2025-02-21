@@ -1,3 +1,89 @@
+# 5-1. Conditional Tests
+car = 'subaru'
+print("Is car == 'subaru'? I predict True.")
+print(car == 'subaru')  # True
+
+print("\nIs car == 'audi'? I predict False.")
+print(car == 'audi')  # False
+
+print("\nIs 10 > 5? I predict True.")
+print(10 > 5)  # True
+
+print("\nIs 7 < 3? I predict False.")
+print(7 < 3)  # False
+
+print("\nIs 'Python' != 'Java'? I predict True.")
+print('Python' != 'Java')  # True
+
+print("\nIs 20 <= 15? I predict False.")
+print(20 <= 15)  # False
+
+print("\nIs 'apple' == 'Apple'.lower()? I predict True.")
+print('apple' == 'Apple'.lower())  # True
+
+print("\nIs 100 >= 100? I predict True.")
+print(100 >= 100)  # True
+
+print("\nIs 'banana' in ['apple', 'banana', 'cherry']? I predict True.")
+print('banana' in ['apple', 'banana', 'cherry'])  # True
+
+print("\nIs 'grape' not in ['apple', 'banana', 'cherry']? I predict True.")
+print('grape' not in ['apple', 'banana', 'cherry'])  # True
+
+# 5-2. More Conditional Tests
+# String equality and inequality
+print("\nIs 'hello' == 'Hello'? I predict False.")
+print('hello' == 'Hello')  # False
+
+print("\nIs 'WORLD'.lower() == 'world'? I predict True.")
+print('WORLD'.lower() == 'world')  # True
+
+# Numerical comparisons
+print("\nIs 50 == 50? I predict True.")
+print(50 == 50)  # True
+
+print("\nIs 10 != 10? I predict False.")
+print(10 != 10)  # False
+
+print("\nIs 42 > 30? I predict True.")
+print(42 > 30)  # True
+
+print("\nIs 25 < 20? I predict False.")
+print(25 < 20)  # False
+
+print("\nIs 18 >= 18? I predict True.")
+print(18 >= 18)  # True
+
+print("\nIs 5 <= 4? I predict False.")
+print(5 <= 4)  # False
+
+# Using 'and' and 'or'
+print("\nIs 5 > 2 and 10 > 5? I predict True.")
+print(5 > 2 and 10 > 5)  # True
+
+print("\nIs 7 > 10 or 3 < 5? I predict True.")
+print(7 > 10 or 3 < 5)  # True
+
+print("\nIs 8 < 3 and 2 > 1? I predict False.")
+print(8 < 3 and 2 > 1)  # False
+
+# Checking list membership
+fruits = ['apple', 'orange', 'grape']
+print("\nIs 'apple' in fruits? I predict True.")
+print('apple' in fruits)  # True
+
+print("\nIs 'banana' not in fruits? I predict True.")
+print('banana' not in fruits)  # True
+
+print("\nIs 'orange' not in fruits? I predict False.")
+print('orange' not in fruits)  # False
+
+
+
+
+
+
+
 # 6-11 & 6-12. Enhanced Cities Dictionary
 cities = {
     "New York": {
