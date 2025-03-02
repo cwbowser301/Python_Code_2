@@ -32,3 +32,68 @@ while True:  # Infinite loop that will only stop with a break statement
 while True:  # This loop runs indefinitely
     print("This loop will run forever!")  # Prints continuously until stopped manually
     # To stop the loop, press CTRL+C or close the terminal
+
+
+
+def pizza_toppings():
+    """Handles the pizza toppings input with a break statement."""
+    while True:
+        topping = input("Enter a pizza topping (or type 'quit' to finish): ")
+        if topping.lower() == 'quit':
+            break
+        print(f"I'll add {topping} to your pizza.")
+
+def movie_tickets():
+    """Handles movie ticket pricing based on age."""
+    active = True
+    while active:
+        age = input("Enter your age (or type 'quit' to exit): ")
+        if age.lower() == 'quit':
+            active = False
+        else:
+            age = int(age)
+            if age < 3:
+                price = "free"
+            elif age <= 12:
+                price = "$10"
+            else:
+                price = "$15"
+            print(f"Your movie ticket costs {price}.")
+
+def infinite_loop():
+    """Creates an infinite loop (Press CTRL+C to stop)."""
+    while True:
+        print("This loop will run forever!")
+
+def main_menu():
+    """Displays a menu for selecting a program."""
+    while True:
+        print("\nChapter 7 - Programming Solutions")
+        print("1. Pizza Toppings (7-4)")
+        print("2. Movie Tickets (7-5)")
+        print("3. Loop Exits Demo (7-6)")
+        print("4. Infinite Loop (7-7)")
+        print("5. Exit")
+
+        choice = input("Enter your choice: ")
+
+        if choice == '1':
+            pizza_toppings()
+        elif choice == '2':
+            movie_tickets()
+        elif choice == '3':
+            print("\nRunning different loop exit strategies...")
+            pizza_toppings()  # Break statement
+            movie_tickets()  # Active flag example
+        elif choice == '4':
+            print("\nRunning an infinite loop. Press CTRL+C to stop.")
+            infinite_loop()
+        elif choice == '5':
+            print("Exiting program. Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please select a valid option.")
+
+# Run the menu program
+main_menu()
+
